@@ -1,0 +1,657 @@
+/*Обнуление стилей*/
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*Шрифты*/
+@font-face {
+  font-family: "HelveticaBold";
+  src: url(../fonts/HelveticaNeueCyr-Bold_0.otf);
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "HelveticaLight";
+  src: url(../fonts/HelveticaNeueCyr-Light_0.otf);
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "HelveticaNormal";
+  src: url(../fonts/HelveticaNeueCyr-Roman.otf);
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face{
+   font-family: "HelveticaMedium";
+   src: url(../fonts/HelveticaNeueCyr-Medium_0.otf);
+   font-style: normal;
+   font-weight: normal;
+}
+
+/**Начало стилей*/
+.navigation {
+  width: 100%;
+}
+
+.nav li a {
+  padding: 10px 45px 10px 45px;
+  color: white;
+  font-family: "HelveticaLight", "Arial";
+}
+
+.nav li a:visited{
+   color: white;
+}
+
+.nav li:last-child {
+  margin-right: 137px;
+}
+
+.nav li a:hover {
+  border: 1px solid #ffb400;
+  border-radius: 500em;
+  color: rgb(252, 248, 248);
+}
+
+.navigation .logo {
+  padding: 10px 0 0 0;
+  margin-right: auto;
+  margin-left: 137px;
+}
+
+.nav--cont {
+  /*background: url(../img/overlay.png);*/
+  background-size: cover;
+}
+
+.nav--bar {
+  padding-top: 20px;
+}
+
+.about--text {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 340px;
+  padding-bottom: 200px;
+}
+
+.about--text .international--transportation--text {
+  width: 100%;
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: "HelveticaNormal", "Arial";
+  padding-bottom: 20px;
+  border-bottom: 2px solid #e84e0e;
+  border-image: linear-gradient(to right, #e84e0e, #fdcd2c);
+  border-image-slice: 1;
+}
+
+.about--text .international--transportation--text.top {
+  border-bottom: 2px solid #e84e0e;
+  border-image: linear-gradient(to right, #e84e0e, #fdcd2c);
+  border-image-slice: 1;
+  animation: fromOpacity 3s;
+}
+@keyframes fromOpacity {
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+ }
+
+.about--text .international--transportation--text.top p{
+   animation: showLeft 2s;
+}
+
+@keyframes showLeft {
+   from {margin-left:-1000px;}
+   to {margin-left: 0px;}
+   }
+
+.about--text .international--transportation--text.bottom {
+  padding-top: 20px;
+  padding-bottom: 0;
+  border: none;
+}
+.about--text .international--transportation--text.bottom p {
+  text-align: right;
+  width: 30%;
+  margin-left: auto;
+  margin-bottom: -42px;
+  animation: showRight 2s;
+}
+
+@keyframes showRight {
+   from {margin-right:-1000px;}
+   to {margin-right: 0px;}
+   }
+
+.future--text {
+  width: 30%;
+  text-transform: uppercase;
+  font-family: "HelveticaBold", "Arial";
+  line-height: 80px;
+  font-size: 80px;
+  color: white;
+}
+
+.future--text p{
+   animation: showLeft 2s;
+}
+
+
+ 
+.video{
+   width: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: -20;
+}
+.my--video{
+   min-width: 100%;
+}
+
+.advantages {
+  background: white;
+  width: 100%;
+}
+
+.v1 {
+  border-left: 2px solid #e84e0e;
+  border-image: linear-gradient(to right bottom, #e84e0e, #fdcd2c);
+  border-image-slice: 1;
+  height: 1070px;
+  position: absolute;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.advantages--text {
+  width: 30%;
+  margin-right: auto;
+  padding-top: 50px;
+}
+
+.advantages--text p {
+  font-family: "HelveticaBold", "Arial";
+  font-size: 36px;
+  color: #515151;
+}
+
+/*цифра 1*/
+.first{
+   width: 50%;
+   margin-left: auto;
+   margin-top: 0;
+   margin-bottom: 0;
+   padding-top: 0;
+   padding-bottom: 0;
+   background-color: #d6dadf;
+}
+
+.first--text{
+   display: flex;
+   align-items: center;
+   padding: 0;
+   margin: 0;
+   color: #515151;
+}
+
+.number{
+   color: #515151;
+   font-size: 241px;
+   font-family: "HelveticaBold", "Arial";
+   line-height: .7;
+   padding: 0;
+}
+
+.one{
+   margin-left: -6rem;
+}
+
+.after--text{
+   font-size: 40px;
+   font-family: "HelveticaNormal", "Arial";
+}
+
+/*цифра 2*/
+.second{
+   width: 50%;
+   margin-right: auto;
+   margin-top: 0;
+   margin-bottom: 0;
+   padding-top: 0;
+   padding-bottom: 0;
+   background-color: #d6dadf;
+}
+.second--text{
+   display: flex;
+   align-items: center;
+   padding: 0;
+   margin: 0;
+   color: #515151;
+}
+
+.second .after--text{
+   padding-left: 35px;
+}
+
+.two{
+   padding-left: 15px;
+}
+
+/*цифра 3*/
+.thrid{
+   width: 50%;
+   margin-left: auto;
+   margin-top: 0;
+   margin-bottom: 0;
+   padding-top: 0;
+   padding-bottom: 0;
+   background-color: #d6dadf;
+}
+
+.thrid--text{
+   display: flex;
+   align-items: center;
+   padding: 0;
+   margin: 0;
+   color: #515151;
+}
+
+.thrid--text .after--text, .fifth--text .after--text{
+   padding-left: 31px;
+}
+
+.three{
+   margin-left: -8rem;
+}
+
+/*цифра 4*/
+.forth{
+   width: 50%;
+   margin-right: auto;
+   margin-top: 0;
+   margin-bottom: 0;
+   padding-top: 0;
+   padding-bottom: 0;
+   background-color: #d6dadf;
+}
+.forth--text{
+   display: flex;
+   align-items: center;
+   padding: 0;
+   margin: 0;
+   color: #515151;
+}
+
+.forth .after--text{
+   padding-left: 35px;
+}
+
+.four{
+   padding-left: 15px;
+}
+
+/*цифра 5*/
+.fifth{
+   width: 50%;
+   margin-left: auto;
+   margin-top: 0;
+   margin-bottom: 0;
+   padding-top: 0;
+   padding-bottom: 0;
+   background-color: #d6dadf;
+}
+
+.fifth--text{
+   display: flex;
+   align-items: center;
+   padding: 0;
+   margin: 0;
+   color: #515151;
+}
+
+.five{
+   margin-left: -8rem;
+}
+
+
+.conts-img {
+  min-width: 100%;
+  margin: 0 auto;
+  margin-top: -20px;
+}
+
+.conts {
+  margin: 0;
+  min-width: 100%;
+}
+
+.transport--types {
+  background-color: white;
+  padding-top: 55px;
+}
+
+.transport--types--text p {
+  font-family: "HelveticaBold", "Arial";
+  font-size: 36px;
+  color: #515151;
+}
+
+.icons {
+  margin-top: 35px;
+}
+
+.flex-icons {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+.icon1, .icon2, .icon3, .icon4{
+   width: 20.2rem;
+}
+
+.icon--cont {
+  width: 135px;
+  height: 135px;
+  background-color: #e84e0e;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.icon--cont:hover {
+  background-color: #515151;
+}
+
+.transport--icon {
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+.transport--icon4 {
+  margin: auto;
+  padding-top: 33px;
+}
+
+.after--icons {
+  width: 100%;
+  background-color: #c1c7cf;
+  margin-top: 50px;
+}
+
+.after--icons--text {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding: 40px 0 35px 0;
+}
+
+.text {
+   width: 20.2rem;
+  text-align: center;
+  font-family: "HelveticaMedium", "Arial";
+  font-size: 20px;
+  color: #515151;
+}
+
+.map {
+  margin-top: 125px;
+}
+
+.pre--map--text p {
+   font-family: "HelveticaBold", "Arial";
+   font-size: 36px;
+   color: #515151;
+}
+
+.map--img {
+  margin: 0 auto;
+}
+
+.map--img img {
+  min-width: 99%;
+}
+
+.partners {
+  margin-bottom: 73px;
+}
+
+.partners--text p {
+   font-family: "HelveticaBold", "Arial";
+   font-size: 36px;
+   color: #515151;
+}
+
+/*слайдер*/
+
+.partners--slider {
+  border-bottom: 1px solid #c5c5c5;
+  border-top: 1px solid #c5c5c5;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slider .slick-arrow {
+  display: none;
+  visibility: hidden;
+}
+
+.slick-track {
+  padding-top: 55px;
+  display: flex;
+}
+
+.slider-item {
+  min-height: 200px;
+  align-items: center;
+}
+
+
+
+.form--section{
+   width: 100%;
+   background: #c1c7cf;
+   margin-top: 105px;
+}
+
+.callback--text{
+   width: 100%;
+   margin-top: 60px;
+   margin-bottom: 40px;
+   border-bottom: 2px solid #e84e0e;
+   border-image: linear-gradient(to right, #e84e0e, #fdcd2c);
+   border-image-slice: 1;
+}
+
+.callback--text p{
+   font-family: "HelveticaBold", "Arial";
+   font-size: 48px;
+   padding-bottom: 36px; 
+   color: #515151;
+}
+
+.input--cont{
+   width: 90%;
+   margin-bottom: 60px;
+}
+
+.even{
+   margin-left: auto;
+}
+
+input{
+   width: 100%;
+   border: none;
+   border-bottom:1px solid gray ;
+   background: #c1c7cf;
+   outline:none;
+}
+
+.form--send{
+   border: none;
+   font-family: "HelveticaLight", "Arial";
+   font-size: 18px;
+   color: white;
+   background-color: #e84e0e;
+   transition: .3s;
+   cursor: pointer;
+   margin-bottom: 50px;
+   width: 20%;
+   height: 45px;
+}
+
+.form--send:hover{
+   background-color: white;
+   color: #e84e0e;
+   border: 1px solid #e84e0e;
+}
+
+.pre--contacts{
+   width: 100%;
+   padding-top: 80px;
+}
+
+
+.contacts{
+   background-color: white;
+}
+.cont--info p{
+   padding-top: 60px;
+   margin-bottom: 50px;
+   font-family: "HelveticaBold", Arial;
+   color: #515151;
+   font-size: 40px;
+}
+
+.adress{
+   margin-bottom: 50px;
+}
+.adress p {
+   color: #515151;
+   font-size: 20px;
+   font-family: "HelveticaLight";
+}
+
+.adress p:nth-of-type(1){
+   font-family: "HelveticaMedium", Arial;
+}
+
+.phone--number{
+   margin-bottom: 50px;
+}
+.phone--number p{
+   color: #515151;
+   font-size: 20px;
+   font-family: "HelveticaLight", Arial;
+}
+
+.phone--number p:nth-of-type(1){
+   font-family: "HelveticaMedium", Arial;
+}
+
+.e-mail{
+   margin-bottom: 50px;
+}
+
+.e-mail p{
+   color: #515151;
+   font-size: 20px;
+   font-family: "HelveticaLight", Arial;
+}
+
+.e-mail p:nth-of-type(1){
+   font-family: "HelveticaMedium", Arial;
+}
+
+footer{
+   background-color: #515151;
+}
+
+.footer-copyright a{
+   color: inherit;
+}
+.footer-copyright a:visited{
+   color: inherit;
+}
