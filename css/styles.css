@@ -716,6 +716,19 @@ footer{
 	}
 }
 
+@media (max-width: 1154px){
+	.about--text{
+		padding-top: 90px;
+	}
+	.future--text{
+		line-height: 65px;
+		font-size: 55px;
+	}
+	.about--text .international--transportation--text{
+		font-size: 17px;
+	}
+}
+
 @media (max-width: 992px){
 	.about--text{
 		padding-top: 90px;
