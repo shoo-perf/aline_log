@@ -942,7 +942,7 @@ footer {
    width: 25%;
    }
    .navbar-brand img{
-      margin-top: 5px;
+      margin-top: 0;
    }
    .navbar-light .navbar-nav .nav-link {
       padding: 5px 45px 10px 45px;
@@ -1131,6 +1131,12 @@ img{
 }
 }
 @media(max-width: 562px){
+   .navbar-dark .navbar-brand {
+      width: 30%;
+  }
+   .navbar-brand img {
+      padding-right: 20px;
+  }
    .navigation{
       position: absolute;
       z-index: 2;
@@ -1173,7 +1179,7 @@ img{
 }  
 
 .about--text {
-   padding-top: 370px;
+   padding-top: 420px;
 }
 .transport--types {
    background-color: #393939;
@@ -1219,30 +1225,31 @@ img{
 }  
 
 .about--text {
-   padding-top: 240px;
+   padding-top: 400px;
 }
 .transport--types {
    background-color: #393939;
    padding-top: 50px;
 }
-  }
-  .v1{
-     height: 449px;
-  }
-  .after--text {
-   font-size: 12px;
+.v1{
+   height: 449px;
 }
-  .second .after--text, .thrid--text .after--text,.forth .after--text, 
-  .fifth--text .after--text{
-     padding-left: 10px;
-  }
-  img {
-   margin-top: 30%;
+.after--text {
+ font-size: 12px;
+}
+.second .after--text, .thrid--text .after--text,.forth .after--text, 
+.fifth--text .after--text{
+   padding-left: 10px;
+}
+img {
+ margin-top: 30%;
 }
 .button--cont{
-   display: flex;
-   justify-content: space-around;
+ display: flex;
+ justify-content: space-around;
 }
+  }
+
 
 @media(max-width: 464px){
    .future--text {
@@ -1307,7 +1314,7 @@ img{
 
 @media(max-width: 380px){
 .about--text {
-    padding-top: 150px;
+    padding-top: 320px;
 }
 .future--text {
    padding-top: 70px;
