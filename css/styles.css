@@ -258,6 +258,9 @@ select {
   animation: showLeft 2s;
 }
 
+.image--video{
+   display: none;
+}
 .video {
   width: 100%;
   position: absolute;
@@ -1129,34 +1132,97 @@ img{
 }
 }
 @media(max-width: 562px){
+   .navigation{
+      position: absolute;
+      z-index: 2;
+   }
+   .image--video{
+      width: 100%;
+      display: block;
+      position: relative;
+      height: 100vh;
+   }
+   .image--video img{
+      margin: 0;
+   }
+   .video{
+      display: none;
+   }
+   .about--text .international--transportation--text.top p {
+      text-align: left;
+   }
    .about--text .international--transportation--text.bottom p {
-      width: 50%;
+      text-align: left;
+      width: 100%;
   }
+  .about--text .international--transportation--text.top {
+   border-bottom: 1px solid #e84e0e;
+   border-image: linear-gradient(to right, #e84e0e, #fdcd2c);
+   border-image-slice: 1;
+   animation: fromOpacity 3s;
+}
+.about--text .international--transportation--text {
+   font-size: 15px;
+}
    .future--text {
-      width: 39%;
-      font-size: 32px;
-      line-height: 33px;
+      padding-top: 70px;
+    width: 53%;
+    font-size: 50px;
+    line-height: 51px;
+}  
+
+.about--text {
+   padding-top: 370px;
+}
+.transport--types {
+   background-color: #393939;
+   padding-top: 350px;
+}
   }
-  .about--text {
-   padding-top: 20px;
-   padding-bottom: 27px;
-}
-}
+
 @media(max-width: 479px){
-   .navbar-collapse {
-      top: 55px;
-      height: 27vh;
+   .image--video{
+      width: 100%;
+      display: block;
+      position: relative;
+      height: 100vh;
+   }
+   .image--video img{
+      margin: 0;
+   }
+   .video{
+      display: none;
+   }
+   .about--text .international--transportation--text.top p {
+      text-align: left;
+   }
+   .about--text .international--transportation--text.bottom p {
+      text-align: left;
+      width: 100%;
   }
-   .about--text {
-      padding-top: 23px;
-      padding-bottom: 21px;
-  }
-   .about--text .international--transportation--text {
-      font-size: 9px;
-  }
+  .about--text .international--transportation--text.top {
+   border-bottom: 1px solid #e84e0e;
+   border-image: linear-gradient(to right, #e84e0e, #fdcd2c);
+   border-image-slice: 1;
+   animation: fromOpacity 3s;
+}
+.about--text .international--transportation--text {
+   font-size: 15px;
+}
    .future--text {
-      font-size: 30px;
-      line-height: 35px;
+      padding-top: 70px;
+    width: 53%;
+    font-size: 50px;
+    line-height: 51px;
+}  
+
+.about--text {
+   padding-top: 240px;
+}
+.transport--types {
+   background-color: #393939;
+   padding-top: 200px;
+}
   }
   .v1{
      height: 449px;
@@ -1175,15 +1241,13 @@ img{
    display: flex;
    justify-content: space-around;
 }
-}
+
 @media(max-width: 464px){
    .future--text {
-      font-size: 24px;
-      line-height: 26px;
-      padding-top: 28px;
-  }
-  .about--text .international--transportation--text.bottom p {
-   width: 45%;
+      padding-top: 70px;
+    width: 70%;
+    font-size: 50px;
+    line-height: 51px;
 }
   .my--video {
    min-height: 100%;
@@ -1236,5 +1300,20 @@ img{
 }
 .footer-copyright a:visited{
    color: inherit;
+}
+}
+
+@media(max-width: 380px){
+.about--text {
+    padding-top: 150px;
+}
+.future--text {
+   padding-top: 70px;
+   width: 70%;
+   font-size: 43px;
+   line-height: 51px;
+}
+.about--text .international--transportation--text {
+   font-size: 12px;
 }
 }
