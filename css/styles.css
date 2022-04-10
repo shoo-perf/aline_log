@@ -1143,6 +1143,8 @@ img{
    }
    .image--video img{
       margin: 0;
+      width: 100%;
+      height: 100%;
    }
    .video{
       display: none;
@@ -1184,9 +1186,10 @@ img{
       width: 100%;
       display: block;
       position: relative;
-      height: 69vh;
+      height: 100vh;
    }
    .image--video img{
+      height: 100%;
       margin: 0;
    }
    .video{
