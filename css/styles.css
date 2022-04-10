@@ -145,8 +145,6 @@ select {
    order: -1;
 }
 
-
-
 .nav-item a:visited {
   color: white;
 }
@@ -168,6 +166,9 @@ select {
   background-size: cover;
 }
 
+.navbar-brand img{
+   margin: 0;
+}
 .nav--bar {
   padding-top: 20px;
 }
@@ -177,11 +178,9 @@ select {
   margin: 0 auto;
   padding-top: 265px;
   padding-bottom: 320px;
-  padding-top: 340px;
+  padding-top: 263px;
 
 }
-
-
 
 .about--text .international--transportation--text {
   width: 100%;
@@ -1167,7 +1166,7 @@ img{
    .future--text {
       padding-top: 70px;
     width: 53%;
-    font-size: 50px;
+    font-size: 49px;
     line-height: 51px;
 }  
 
@@ -1185,7 +1184,7 @@ img{
       width: 100%;
       display: block;
       position: relative;
-      height: 100vh;
+      height: 69vh;
    }
    .image--video img{
       margin: 0;
@@ -1221,7 +1220,7 @@ img{
 }
 .transport--types {
    background-color: #393939;
-   padding-top: 200px;
+   padding-top: 50px;
 }
   }
   .v1{
