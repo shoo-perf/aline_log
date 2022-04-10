@@ -1,17 +1,9 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.3.6,
-* Autoprefixer: v10.3.1
-* Browsers: last 4 version
-*/
-
-/*Обнуление стилей*/
+/*Обнуление стилей
 /* Указываем box sizing */
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Убираем внутренние отступы */
@@ -54,8 +46,7 @@ ol[class] {
 
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a:not([class]) {
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 /* Упрощаем работу с изображениями */
@@ -80,13 +71,9 @@ select {
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
 @media (prefers-reduced-motion: reduce) {
   * {
-    -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
-    -webkit-transition-duration: 0.01ms !important;
-         -o-transition-duration: 0.01ms !important;
-            transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
@@ -149,16 +136,13 @@ select {
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
     outline: none;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
 }
 
 .navbar-dark .navbar-toggler {
    color: rgba(255, 255, 255, 0.685);
    border-color: rgba(255,255,255,0 );
-   -webkit-box-ordinal-group: 0;
-       -ms-flex-order: -1;
-           order: -1;
+   order: -1;
 }
 
 .nav-item a:visited {
@@ -206,28 +190,15 @@ select {
   font-family: "HelveticaNormal", "Arial";
   padding-bottom: 20px;
   border-bottom: 2px solid #e84e0e;
-  -o-border-image: -o-linear-gradient(left, #e84e0e, #fdcd2c);
-     border-image: -webkit-gradient(linear, left top, right top, from(#e84e0e), to(#fdcd2c));
-     border-image: linear-gradient(to right, #e84e0e, #fdcd2c);
+  border-image: linear-gradient(to right, #e84e0e, #fdcd2c);
   border-image-slice: 1;
 }
 
 .about--text .international--transportation--text.top {
   border-bottom: 2px solid #e84e0e;
-  -o-border-image: -o-linear-gradient(left, #e84e0e, #fdcd2c);
-     border-image: -webkit-gradient(linear, left top, right top, from(#e84e0e), to(#fdcd2c));
-     border-image: linear-gradient(to right, #e84e0e, #fdcd2c);
+  border-image: linear-gradient(to right, #e84e0e, #fdcd2c);
   border-image-slice: 1;
-  -webkit-animation: fromOpacity 3s;
-          animation: fromOpacity 3s;
-}
-@-webkit-keyframes fromOpacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  animation: fromOpacity 3s;
 }
 @keyframes fromOpacity {
   0% {
@@ -239,17 +210,7 @@ select {
 }
 
 .about--text .international--transportation--text.top p {
-  -webkit-animation: showLeft 2s;
-          animation: showLeft 2s;
-}
-
-@-webkit-keyframes showLeft {
-  from {
-    margin-left: -1000px;
-  }
-  to {
-    margin-left: 0px;
-  }
+  animation: showLeft 2s;
 }
 
 @keyframes showLeft {
@@ -271,17 +232,7 @@ select {
   width: 30%;
   margin-left: auto;
   margin-bottom: -42px;
-  -webkit-animation: showRight 2s;
-          animation: showRight 2s;
-}
-
-@-webkit-keyframes showRight {
-  from {
-    margin-right: -1000px;
-  }
-  to {
-    margin-right: 0px;
-  }
+  animation: showRight 2s;
 }
 
 @keyframes showRight {
@@ -303,8 +254,7 @@ select {
 }
 
 .future--text p {
-  -webkit-animation: showLeft 2s;
-          animation: showLeft 2s;
+  animation: showLeft 2s;
 }
 
 .image--video{
@@ -330,9 +280,7 @@ select {
 
 .v1 {
   border-left: 2px solid #e84e0e;
-  -o-border-image: -o-linear-gradient(left top, #e84e0e, #fdcd2c);
-     border-image: -webkit-gradient(linear, left top, right bottom, from(#e84e0e), to(#fdcd2c));
-     border-image: linear-gradient(to right bottom, #e84e0e, #fdcd2c);
+  border-image: linear-gradient(to right bottom, #e84e0e, #fdcd2c);
   border-image-slice: 1;
   height: 1070px;
   position: absolute;
@@ -372,19 +320,13 @@ select {
 }
 
 .animate_adveantages {
-  -webkit-animation: fadeInUp;
-          animation: fadeInUp;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation: fadeInUp;
+  animation-duration: 1s;
 }
 
 .first--text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 0;
   margin: 0;
   color: #515151;
@@ -418,12 +360,8 @@ select {
   background-color: #d6dadf;
 }
 .second--text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 0;
   margin: 0;
   color: #515151;
@@ -449,12 +387,8 @@ select {
 }
 
 .thrid--text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 0;
   margin: 0;
   color: #515151;
@@ -480,12 +414,8 @@ select {
   background-color: #d6dadf;
 }
 .forth--text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 0;
   margin: 0;
   color: #515151;
@@ -511,12 +441,8 @@ select {
 }
 
 .fifth--text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 0;
   margin: 0;
   color: #515151;
@@ -538,10 +464,8 @@ select {
 }
 
 .animate_transport--types {
-  -webkit-animation: fadeInLeft;
-          animation: fadeInLeft;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation: fadeInLeft;
+  animation-duration: 1s;
 }
 
 .transport--types {
@@ -561,16 +485,10 @@ select {
 }
 
 .flex-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: space-around;
   border-top: 1px solid white;
   border-bottom:1px solid white;
   padding-top: 40px;
@@ -618,10 +536,8 @@ select {
 }
 
 .animate_text {
-  -webkit-animation: fadeInUp;
-          animation: fadeInUp;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation: fadeInUp;
+  animation-duration: 1s;
 }
 
 /**Для новой карты*/
@@ -635,8 +551,6 @@ select {
  }
 
 .map--content{
-   display: -webkit-box;
-   display: -ms-flexbox;
    display: flex;
    margin-bottom: -.4rem;
 }
@@ -662,10 +576,8 @@ select {
  }
 
  .animate_text--header {
-   -webkit-animation: fadeInRight;
-           animation: fadeInRight;
-   -webkit-animation-duration: 1s;
-           animation-duration: 1s;
+   animation: fadeInRight;
+   animation-duration: 1s;
  }
 
  .after--map--text p{
@@ -706,16 +618,12 @@ select {
 
 .slick-track {
   padding-top: 55px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .slider-item {
   min-height: 200px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .form--section {
@@ -729,9 +637,7 @@ select {
   margin-top: 60px;
   margin-bottom: 40px;
   border-bottom: 2px solid #e84e0e;
-  -o-border-image: -o-linear-gradient(left, #e84e0e, #fdcd2c);
-     border-image: -webkit-gradient(linear, left top, right top, from(#e84e0e), to(#fdcd2c));
-     border-image: linear-gradient(to right, #e84e0e, #fdcd2c);
+  border-image: linear-gradient(to right, #e84e0e, #fdcd2c);
   border-image-slice: 1;
 }
 
@@ -743,12 +649,8 @@ select {
 }
 
 .form--container{
-   display: -webkit-box;
-   display: -ms-flexbox;
    display: flex;
-   -webkit-box-pack: justify;
-       -ms-flex-pack: justify;
-           justify-content: space-between;
+   justify-content: space-between;
 }
 
 .input--cont {
@@ -770,8 +672,6 @@ input {
   font-size: 18px;
   color: white;
   background-color: #e84e0e;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
   margin-bottom: 50px;
@@ -1082,8 +982,7 @@ footer {
    }
 
    .map--content {
-      -ms-flex-wrap: wrap-reverse;
-          flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
   }
    .video--section{
       width: 100%;
@@ -1151,8 +1050,7 @@ footer {
    font-size: 31px;
 }
 .form--container {
-   -ms-flex-wrap: wrap;
-       flex-wrap: wrap;
+   flex-wrap: wrap;
 }
 .input--cont {
    width: 100%;
@@ -1219,11 +1117,8 @@ img{
    width: 85%;
 }
 .button--cont{
-   display: -webkit-box;
-   display: -ms-flexbox;
    display: flex;
-   -ms-flex-pack: distribute;
-       justify-content: space-around;
+   justify-content: space-around;
 }
 .adress p {
    font-size: 15px;
@@ -1269,12 +1164,9 @@ img{
   }
   .about--text .international--transportation--text.top {
    border-bottom: 1px solid #e84e0e;
-   -o-border-image: -o-linear-gradient(left, #e84e0e, #fdcd2c);
-      border-image: -webkit-gradient(linear, left top, right top, from(#e84e0e), to(#fdcd2c));
-      border-image: linear-gradient(to right, #e84e0e, #fdcd2c);
+   border-image: linear-gradient(to right, #e84e0e, #fdcd2c);
    border-image-slice: 1;
-   -webkit-animation: fromOpacity 3s;
-           animation: fromOpacity 3s;
+   animation: fromOpacity 3s;
 }
 .about--text .international--transportation--text {
    font-size: 15px;
@@ -1318,12 +1210,9 @@ img{
   }
   .about--text .international--transportation--text.top {
    border-bottom: 1px solid #e84e0e;
-   -o-border-image: -o-linear-gradient(left, #e84e0e, #fdcd2c);
-      border-image: -webkit-gradient(linear, left top, right top, from(#e84e0e), to(#fdcd2c));
-      border-image: linear-gradient(to right, #e84e0e, #fdcd2c);
+   border-image: linear-gradient(to right, #e84e0e, #fdcd2c);
    border-image-slice: 1;
-   -webkit-animation: fromOpacity 3s;
-           animation: fromOpacity 3s;
+   animation: fromOpacity 3s;
 }
 .about--text .international--transportation--text {
    font-size: 15px;
@@ -1356,11 +1245,8 @@ img {
  margin-top: 30%;
 }
 .button--cont{
- display: -webkit-box;
- display: -ms-flexbox;
  display: flex;
- -ms-flex-pack: distribute;
-     justify-content: space-around;
+ justify-content: space-around;
 }
   }
 
