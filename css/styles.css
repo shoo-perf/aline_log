@@ -107,9 +107,24 @@ select {
   font-weight: normal;
 }
 
+/*Переработка видео*/
+.new--video{
+	width: 100%;
+	min-height: 100vh;
+}
+
+.new--my--video{
+	min-width: 100%;
+	min-height: 100vh;
+}
+
+
 /**Начало стилей*/
 .navigation {
-  width: 100%;
+  position: absolute;
+  top: 0;
+  left:0;
+  min-width: 100%;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -163,7 +178,11 @@ select {
   margin: 0 auto;
   padding-top: 265px;
   padding-bottom: 320px;
+  padding-top: 340px;
+
 }
+
+
 
 .about--text .international--transportation--text {
   width: 100%;
@@ -1215,5 +1234,78 @@ img{
 }
 .cont--info h2 {
    font-size: 22px;
+}
+.footer-copyright a:visited{
+   color: inherit;
+}
+
+
+/*Медиазапросы*/
+
+
+
+@media (max-width: 1670px){
+	.about--text{
+		padding-top: 230px;
+	}
+	.future--text{
+		line-height: 75px;
+		font-size: 70px;
+	}
+	.about--text .international--transportation--text{
+		font-size: 28px;
+	}
+}
+
+@media (max-width: 1350px){
+	.about--text{
+		padding-top: 135px;
+	}
+	.future--text{
+		line-height: 72px;
+		font-size: 65px;
+	}
+	.about--text .international--transportation--text{
+		font-size: 22px;
+	}
+}
+
+@media (max-width: 1240px){
+	.about--text{
+		padding-top: 90px;
+	}
+	.future--text{
+		line-height: 68px;
+		font-size: 60px;
+	}
+	.about--text .international--transportation--text{
+		font-size: 19px;
+	}
+}
+
+@media (max-width: 1154px){
+	.about--text{
+		padding-top: 90px;
+	}
+	.future--text{
+		line-height: 65px;
+		font-size: 55px;
+	}
+	.about--text .international--transportation--text{
+		font-size: 17px;
+	}
+}
+
+@media (max-width: 1005px){
+	.about--text{
+		padding-top: 90px;
+	}
+	.future--text{
+		line-height: 60px;
+		font-size: 50px;
+	}
+	.about--text .international--transportation--text{
+		font-size: 16px;
+	}
 }
 }
