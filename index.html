@@ -4,35 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--<link rel="stylesheet" type="text/css" href="../css/slick.css"/>
-// Add the new slick-theme.css if you want the default styling
-<link rel="stylesheet" type="text/css" href="../css/slick-theme.css"/>-->
+   <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>Home</title>
   </head>
   <body>
-    <div class="navigation">
+   <div class="navigation">
       <div class="nav--cont">
-        <div class="nav--bar">
-          <ul class="nav justify-content-end">
-            <div class="logo">
-              <img src="img/лого.png" alt="" />
-            </div>
-            <li class="nav-item">
-              <a class="nav-link" href="#">О нас</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Услуги</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">География</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </div>
+         <section class="navbar-home navbar-dark">
+            <nav class="navbar navbar-expand-lg navbar-light home-navbar">
+               <div class="container">
+                  <a class="navbar-brand" href="index.html"><img src="img/лого.png" alt="" /></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                     aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse home-navbar" id="navbarSupportedContent">
+                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                           <a class="nav-link" href="#">О нас</a>
+                         </li>
+                         <li class="nav-item">
+                           <a class="nav-link" href="#">Услуги</a>
+                         </li>
+                         <li class="nav-item">
+                           <a class="nav-link" href="#">География</a>
+                         </li>
+                         <li class="nav-item">
+                           <a class="nav-link" href="#">Контакты</a>
+                         </li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+         </section>
         <div class="undernav--content">
           <div class="about--text">
             <div class="international--transportation--text top">
@@ -45,7 +56,7 @@
           </div>
           <div class="video">
             <video
-              src="video/containers.mp4"
+              src="video/containers bw.mp4"
               class="my--video"
               autoplay
               muted
@@ -55,75 +66,18 @@
         </div>
       </div>
     </div>
-    <section class="advantages">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="v1"></div>
-            <div class="advantages--text">
-              <p class="advantages--p">Преимущества</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="first">
-        <div class="first--text">
-          <p class="number one">1</p>
-          <p class="after--text">
-            Подвижной парк собственных <br> 
-            и арендованных фитинговых платформ
-          </p>
-        </div>
-      </div>
-      <div class="second">
-        <div class="second--text">
-          <p class="number two">2</p>
-          <p class="after--text">
-            Собственный парк контейнеров
-          </p>
-        </div>
-      </div>
-      <div class="thrid">
-         <div class="thrid--text">
-            <p class="number three">3</p>
-            <p class="after--text">
-               Более 30000 контейнерных отправок
-            </p>
-         </div>
-      </div>
-      <div class="forth">
-         <div class="forth--text">
-            <p class="number four">4</p>
-            <p class="after--text">
-               Развитая сеть доставки <br />
-                  грузов до двери по России
-            </p>
-         </div>
-      </div>
-      <div class="fifth">
-         <div class="fifth--text">
-            <p class="number five">5</p>
-            <p class="after--text">
-               Конкурентное преимущество <br> 
-               при выгодных ставках
-            </p>
-         </div>
-      </div>
-      <div class="conts-img">
-        <img class="conts" src="img/conts.png" alt="" />
-      </div>
-    </section>
     <section class="transport--types">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <div class="transport--types--text">
-              <p>Перевозки</p>
+            <div class="transport--types--text hidden">
+              <h2>Перевозки</h2>
             </div>
           </div>
           <div class="col-md-6"></div>
         </div>
       </div>
+      
       <section class="icons">
         <div class="container">
           <div class="row">
@@ -137,6 +91,12 @@
                       alt=""
                     />
                   </div>
+                  <div class="text">
+                     <p class="text_anim hidden">
+                        Железнодорожные<br />
+                        контейнерные перевозки
+                       </p>
+                  </div>
                 </div>
                 <div class="icon2">
                   <div class="icon--cont">
@@ -145,6 +105,12 @@
                       src="img/icon2.png"
                       alt=""
                     />
+                  </div>
+                  <div class="text">
+                     <p class="text_anim hidden">
+                        Международные<br />
+                        контейнерные перевозки
+                       </p>
                   </div>
                 </div>
                 <div class="icon3">
@@ -155,6 +121,12 @@
                       alt=""
                     />
                   </div>
+                  <div class="text">
+                     <p class="text_anim hidden">
+                        Ускоренные<br />
+                        контейнерные поезда
+                       </p>
+                  </div>
                 </div>
                 <div class="icon4">
                   <div class="icon--cont">
@@ -164,39 +136,11 @@
                       alt=""
                     />
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="after--icons">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="after--icons--text">
                   <div class="text">
-                    <p>
-                      Железнодорожные<br />
-                      контейнерные перевозки
-                    </p>
-                  </div>
-                  <div class="text">
-                    <p>
-                      Международные<br />
-                      контейнерные перевозки
-                    </p>
-                  </div>
-                  <div class="text">
-                    <p>
-                      Ускоренные<br />
-                      контейнерные поезда
-                    </p>
-                  </div>
-                  <div class="text">
-                    <p>
-                      Автомобильные<br />
-                      контейнерные перевозки
-                    </p>
+                     <p class="text_anim hidden">
+                        Автомобильные<br />
+                        контейнерные перевозки
+                       </p>
                   </div>
                 </div>
               </div>
@@ -204,26 +148,96 @@
           </div>
         </div>
       </section>
-      <section class="map">
-        <div class="container">
-          <div class="row">
+    </section>
+    <div class="map">
+    <div class="map--section">
+      <div class="container">
+         <div class="row">
             <div class="col-md-12">
-              <div class="pre--map--text">
-                <p>Карта маршрутов</p>
-              </div>
+               <div class="map--content">
+                  <div class="video--section">
+                     <video
+                     src="video/map_video.mp4"
+                     autoplay
+                     muted
+                     loop
+                   ></video> 
+               </div>
+               <div class="after--map--text">
+                     <h2 class="text--header hidden">Карта маршрутов</h2>
+                     <p class="normal--size">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas corporis dolores temporibus! Accusantium libero asperiores nesciunt, sint, ipsam perspiciatis commodi vitae est nemo beatae porro? Reiciendis maiores ab corporis facere.
+                     Harum dolore nesciunt natus sint quam voluptate nihil. Necessitatibus vero ullam maxime eum veniam, porro deserunt? Cumque consequuntur ullam cum.  </p>
+               </div>
+               </div>
+            </div>
+         </div>
+      </div>
+    </div>
+   </div>
+    <section class="advantages">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="v1"></div>
+            <div class="advantages--text">
+              <h2 class="advantages--header">Преимущества</h2>
             </div>
           </div>
         </div>
-        <div class="map--img">
-          <img src="img/map.png" alt="" />
+      </div>
+      <div class="first">
+        <div class="first--text advantages_anim advantages_hidden">
+          <p class="number one">1</p>
+          <p class="after--text">
+            Подвижной парк собственных <br> 
+            и арендованных фитинговых платформ
+          </p>
         </div>
-      </section>
+      </div>
+      <div class="second">
+        <div class="second--text advantages_anim advantages_hidden">
+          <p class="number two">2</p>
+          <p class="after--text">
+            Собственный парк контейнеров
+          </p>
+        </div>
+      </div>
+      <div class="thrid">
+         <div class="thrid--text advantages_anim advantages_hidden">
+            <p class="number three">3</p>
+            <p class="after--text">
+               Более 30000 контейнерных отправок
+            </p>
+         </div>
+      </div>
+      <div class="forth">
+         <div class="forth--text advantages_anim advantages_hidden">
+            <p class="number four">4</p>
+            <p class="after--text">
+               Развитая сеть доставки <br />
+                  грузов до двери по России
+            </p>
+         </div>
+      </div>
+      <div class="fifth">
+         <div class="fifth--text advantages_anim advantages_hidden">
+            <p class="number five">5</p>
+            <p class="after--text">
+               Конкурентное преимущество <br> 
+               при выгодных ставках
+            </p>
+         </div>
+      </div>
+      <div class="conts-img">
+        <img class="conts" src="img/conts.png" alt="" />
+      </div>
+    </section>
       <section class="partners">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
               <div class="partners--text">
-                <p>Партнеры</p>
+                <h2>Партнеры</h2>
               </div>
             </div>
           </div>
@@ -258,44 +272,46 @@
         </div>
       </div>
     </section>
-
-    <div class="form--section">
+        <div class="form--section">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="callback--text">
-              <p>Свяжитесь с нашим менеджером</p>
+              <h2>Свяжитесь с нашим менеджером</h2>
             </div>
           </div>
         </div>
         <div class="form--field">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
+               <div class="form--container">
               <div class="input--cont">
                 <input type="text" placeholder="Ваше имя" />
               </div>
-            </div>
-            <div class="col-md-6">
               <div class="input--cont even">
-                <input type="tel" placeholder="Ваш номер телефона" />
-              </div>
+               <input type="tel" placeholder="Ваш номер телефона" />
+             </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="input--cont">
-                <input type="text" placeholder="Ваш e-mail" />
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="input--cont even">
-                <input type="text" placeholder="Краткий комментарий" />
-              </div>
             </div>
           </div>
           <div class="row">
             <div class="col-md-12">
-              <button class="form--send">Отправить</button>
+               <div class="form--container">
+              <div class="input--cont">
+                <input type="text" placeholder="Ваш e-mail" />
+              </div>
+              <div class="input--cont even">
+               <input type="text" placeholder="Комментарий" />
+             </div>
+            </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+               <div class="button--cont">
+                  <button class="form--send">Отправить</button>
+               </div>
+              
             </div>
           </div>
         </div>
@@ -306,7 +322,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="cont--info">
-              <p>Контактная информация</p>
+              <h2>Контактная информация</h2>
             </div>
           </div>
         </div>
