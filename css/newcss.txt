@@ -1,9 +1,17 @@
-/*Обнуление стилей
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+/*Обнуление стилей*/
 /* Указываем box sizing */
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* Убираем внутренние отступы */
@@ -46,7 +54,8 @@ ol[class] {
 
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
 }
 
 /* Упрощаем работу с изображениями */
@@ -71,9 +80,13 @@ select {
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
 @media (prefers-reduced-motion: reduce) {
   * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+         -o-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
@@ -136,13 +149,16 @@ select {
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
     outline: none;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 
 .navbar-dark .navbar-toggler {
    color: rgba(255, 255, 255, 0.685);
    border-color: rgba(255,255,255,0 );
-   order: -1;
+   -webkit-box-ordinal-group: 0;
+       -ms-flex-order: -1;
+           order: -1;
 }
 
 .nav-item a:visited {
@@ -183,28 +199,34 @@ select {
 }
 
 .about--text .international--transportation--text {
-  width: 100%;
-  color: white;
-  font-size: 30px;
-  text-transform: uppercase;
-  font-family: "HelveticaNormal", "Arial";
-  padding-bottom: 20px;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom: 2px solid #e84e0e;
-  border-image: linear-gradient(to right, #e84e0e, #fdcd2c);
-  border-image-slice: 1;
+   width: 100%;
+   color: white;
+   font-size: 30px;
+   text-transform: uppercase;
+   font-family: "HelveticaNormal", "Arial";
+   padding-bottom: 20px;
+   border-top: 0px;
+   border-right: 0px;
+   border-left: 0px;
+   border-bottom: 2px solid #e84e0e;
+   border-image: linear-gradient(to right, #e84e0e, #fdcd2c);
 }
-
 .about--text .international--transportation--text.top {
-   border-top: none;
-   border-right: none;
-   border-left: none;
-  border-bottom: 2px solid #e84e0e;
-  border-image: linear-gradient(to right, #e84e0e, #fdcd2c);
-  border-image-slice: 1;
-  animation: fromOpacity 3s;
+   border-top: 0px;
+   border-right: 0px;
+   border-left: 0px;
+   border-bottom: 2px solid #e84e0e;
+   border-image: linear-gradient(to right, #e84e0e, #fdcd2c);
+   -webkit-animation: fromOpacity 3s;
+   animation: fromOpacity 3s;
+}
+@-webkit-keyframes fromOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes fromOpacity {
   0% {
@@ -216,7 +238,17 @@ select {
 }
 
 .about--text .international--transportation--text.top p {
-  animation: showLeft 2s;
+  -webkit-animation: showLeft 2s;
+          animation: showLeft 2s;
+}
+
+@-webkit-keyframes showLeft {
+  from {
+    margin-left: -1000px;
+  }
+  to {
+    margin-left: 0px;
+  }
 }
 
 @keyframes showLeft {
@@ -238,7 +270,17 @@ select {
   width: 30%;
   margin-left: auto;
   margin-bottom: -42px;
-  animation: showRight 2s;
+  -webkit-animation: showRight 2s;
+          animation: showRight 2s;
+}
+
+@-webkit-keyframes showRight {
+  from {
+    margin-right: -1000px;
+  }
+  to {
+    margin-right: 0px;
+  }
 }
 
 @keyframes showRight {
@@ -260,7 +302,8 @@ select {
 }
 
 .future--text p {
-  animation: showLeft 2s;
+  -webkit-animation: showLeft 2s;
+          animation: showLeft 2s;
 }
 
 .image--video{
@@ -285,16 +328,15 @@ select {
 }
 
 .v1 {
-   border-top: none;
-   border-right: none;
-   border-bottom: none;
-  border-left: 2px solid #e84e0e;
-  border-image: linear-gradient(to right bottom, #e84e0e, #fdcd2c);
-  border-image-slice: 1;
-  height: 1070px;
-  position: absolute;
-  left: 50%;
-  margin-left: -1px;
+   border-top: 0px;
+   border-right: 0px;
+   border-bottom: 0px;
+   border-left: 2px solid #e84e0e;
+   border-image: linear-gradient(to right bottom, #e84e0e, #fdcd2c);
+   height: 1070px;
+   position: absolute;
+   left: 50%;
+   margin-left: -1px;
 }
 
 .advantages--text {
@@ -329,13 +371,19 @@ select {
 }
 
 .animate_adveantages {
-  animation: fadeInUp;
-  animation-duration: 1s;
+  -webkit-animation: fadeInUp;
+          animation: fadeInUp;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .first--text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0;
   margin: 0;
   color: #515151;
@@ -369,8 +417,12 @@ select {
   background-color: #d6dadf;
 }
 .second--text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0;
   margin: 0;
   color: #515151;
@@ -396,8 +448,12 @@ select {
 }
 
 .thrid--text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0;
   margin: 0;
   color: #515151;
@@ -423,8 +479,12 @@ select {
   background-color: #d6dadf;
 }
 .forth--text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0;
   margin: 0;
   color: #515151;
@@ -450,8 +510,12 @@ select {
 }
 
 .fifth--text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0;
   margin: 0;
   color: #515151;
@@ -473,8 +537,10 @@ select {
 }
 
 .animate_transport--types {
-  animation: fadeInLeft;
-  animation-duration: 1s;
+  -webkit-animation: fadeInLeft;
+          animation: fadeInLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .transport--types {
@@ -494,15 +560,21 @@ select {
 }
 
 .flex-icons {
-  display: flex;
-  flex: 1;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  border-right: none;
-  border-left: none;
-  border-top: 1px solid white;
-  border-bottom:1px solid white;
-  padding-top: 40px;
+  display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-flex: 1;
+-ms-flex: 1;
+flex: 1;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+-ms-flex-pack: distribute;
+justify-content: space-around;
+border-right: 0px;
+border-left: 0px;
+border-top: 1px solid white;
+border-bottom:1px solid white;
+padding-top: 40px;
 }
 .icon1,
 .icon2,
@@ -547,8 +619,10 @@ select {
 }
 
 .animate_text {
-  animation: fadeInUp;
-  animation-duration: 1s;
+  -webkit-animation: fadeInUp;
+          animation: fadeInUp;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 /**Для новой карты*/
@@ -562,6 +636,8 @@ select {
  }
 
 .map--content{
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
    margin-bottom: -.4rem;
 }
@@ -587,8 +663,10 @@ select {
  }
 
  .animate_text--header {
-   animation: fadeInRight;
-   animation-duration: 1s;
+   -webkit-animation: fadeInRight;
+           animation: fadeInRight;
+   -webkit-animation-duration: 1s;
+           animation-duration: 1s;
  }
 
  .after--map--text p{
@@ -614,11 +692,10 @@ select {
 /*слайдер*/
 
 .partners--slider {
-   border-top: none;
-   border-right: none;
-   border-left: none;
-  border-bottom: 1px solid #c5c5c5;
-  border-top: 1px solid #c5c5c5;
+   border-right: 0px;
+   border-left: 0px;
+   border-bottom: 1px solid #c5c5c5;
+   border-top: 1px solid #c5c5c5;
 }
 
 .slick-list {
@@ -632,12 +709,16 @@ select {
 
 .slick-track {
   padding-top: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .slider-item {
   min-height: 200px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .form--section {
@@ -645,17 +726,15 @@ select {
   background: #c1c7cf;
   margin-top: 105px;
 }
-
 .callback--text {
-  width: 100%;
-  margin-top: 60px;
-  margin-bottom: 40px;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom: 2px solid #e84e0e;
-  border-image: linear-gradient(to right, #e84e0e, #fdcd2c);
-  border-image-slice: 1;
+   width: 100%;
+   margin-top: 60px;
+   margin-bottom: 40px;
+   border-top: 0px;
+   border-right: 0px;
+   border-left: 0px;
+   border-bottom: 2px solid #e84e0e;
+   border-image: linear-gradient(to right, #e84e0e, #fdcd2c);
 }
 
 .callback--text h2 {
@@ -666,8 +745,12 @@ select {
 }
 
 .form--container{
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
-   justify-content: space-between;
+   -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+           justify-content: space-between;
 }
 
 .input--cont {
@@ -677,9 +760,10 @@ select {
 
 input {
   width: 100%;
-  border-top: none;
-  border-right: none;
-  border-left: none;
+  border: none;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
   border-bottom: 1px solid gray;
   background: #c1c7cf;
   outline: none;
@@ -691,6 +775,8 @@ input {
   font-size: 18px;
   color: white;
   background-color: #e84e0e;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
   margin-bottom: 50px;
@@ -1001,7 +1087,8 @@ footer {
    }
 
    .map--content {
-      flex-wrap: wrap-reverse;
+      -ms-flex-wrap: wrap-reverse;
+          flex-wrap: wrap-reverse;
   }
    .video--section{
       width: 100%;
@@ -1069,7 +1156,8 @@ footer {
    font-size: 31px;
 }
 .form--container {
-   flex-wrap: wrap;
+   -ms-flex-wrap: wrap;
+       flex-wrap: wrap;
 }
 .input--cont {
    width: 100%;
@@ -1136,8 +1224,11 @@ img{
    width: 85%;
 }
 .button--cont{
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
-   justify-content: space-around;
+   -ms-flex-pack: distribute;
+       justify-content: space-around;
 }
 .adress p {
    font-size: 15px;
@@ -1181,13 +1272,14 @@ img{
       text-align: left;
       width: 100%;
   }
-  .about--text .international--transportation--text.top {
-   border-top: none;
-   border-right: none;
-   border-left: none;
+.about--text .international--transportation--text.top {
+   border-top: 0px;
+   border-right: 0px;
+   border-left: 0px;
    border-bottom: 1px solid #e84e0e;
    border-image: linear-gradient(to right, #e84e0e, #fdcd2c);
    border-image-slice: 1;
+   -webkit-animation: fromOpacity 3s;
    animation: fromOpacity 3s;
 }
 .about--text .international--transportation--text {
@@ -1229,14 +1321,15 @@ img{
    .about--text .international--transportation--text.bottom p {
       text-align: left;
       width: 100%;
-  }
-  .about--text .international--transportation--text.top {
-   border-top: none;
-   border-right: none;
-   border-left: none;
+}
+
+.about--text .international--transportation--text.top {
+   border-top: 0px;
+   border-right: 0px;
+   border-left: 0px;
    border-bottom: 1px solid #e84e0e;
    border-image: linear-gradient(to right, #e84e0e, #fdcd2c);
-   border-image-slice: 1;
+   -webkit-animation: fromOpacity 3s;
    animation: fromOpacity 3s;
 }
 .about--text .international--transportation--text {
@@ -1270,8 +1363,11 @@ img {
  margin-top: 30%;
 }
 .button--cont{
+ display: -webkit-box;
+ display: -ms-flexbox;
  display: flex;
- justify-content: space-around;
+ -ms-flex-pack: distribute;
+     justify-content: space-around;
 }
   }
 
