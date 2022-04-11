@@ -1054,6 +1054,8 @@ footer {
    height: 470px;
 }
  .number{
+    /* !!!!! */
+    margin-bottom: -.313rem;
     font-size: 100px;
  }
  .one{
