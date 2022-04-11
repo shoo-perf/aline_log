@@ -199,27 +199,26 @@ select {
 }
 
 .about--text .international--transportation--text {
-  width: 100%;
-  color: white;
-  font-size: 30px;
-  text-transform: uppercase;
-  font-family: "HelveticaNormal", "Arial";
-  padding-bottom: 20px;
-  border-bottom: 2px solid #e84e0e;
-  -o-border-image: -o-linear-gradient(left, #e84e0e, #fdcd2c);
-     border-image: -webkit-gradient(linear, left top, right top, from(#e84e0e), to(#fdcd2c));
-     border-image: linear-gradient(to right, #e84e0e, #fdcd2c);
-  border-image-slice: 1;
+   width: 100%;
+   color: white;
+   font-size: 30px;
+   text-transform: uppercase;
+   font-family: "HelveticaNormal", "Arial";
+   padding-bottom: 20px;
+   border-top: 0px;
+   border-right: 0px;
+   border-left: 0px;
+   border-bottom: 2px solid #e84e0e;
+   border-image: linear-gradient(to right, #e84e0e, #fdcd2c);
 }
-
 .about--text .international--transportation--text.top {
-  border-bottom: 2px solid #e84e0e;
-  -o-border-image: -o-linear-gradient(left, #e84e0e, #fdcd2c);
-     border-image: -webkit-gradient(linear, left top, right top, from(#e84e0e), to(#fdcd2c));
-     border-image: linear-gradient(to right, #e84e0e, #fdcd2c);
-  border-image-slice: 1;
-  -webkit-animation: fromOpacity 3s;
-          animation: fromOpacity 3s;
+   border-top: 0px;
+   border-right: 0px;
+   border-left: 0px;
+   border-bottom: 2px solid #e84e0e;
+   border-image: linear-gradient(to right, #e84e0e, #fdcd2c);
+   -webkit-animation: fromOpacity 3s;
+   animation: fromOpacity 3s;
 }
 @-webkit-keyframes fromOpacity {
   0% {
@@ -329,15 +328,15 @@ select {
 }
 
 .v1 {
-  border-left: 2px solid #e84e0e;
-  -o-border-image: -o-linear-gradient(left top, #e84e0e, #fdcd2c);
-     border-image: -webkit-gradient(linear, left top, right bottom, from(#e84e0e), to(#fdcd2c));
-     border-image: linear-gradient(to right bottom, #e84e0e, #fdcd2c);
-  border-image-slice: 1;
-  height: 1070px;
-  position: absolute;
-  left: 50%;
-  margin-left: -1px;
+   border-top: 0px;
+   border-right: 0px;
+   border-bottom: 0px;
+   border-left: 2px solid #e84e0e;
+   border-image: linear-gradient(to right bottom, #e84e0e, #fdcd2c);
+   height: 1070px;
+   position: absolute;
+   left: 50%;
+   margin-left: -1px;
 }
 
 .advantages--text {
@@ -562,18 +561,20 @@ select {
 
 .flex-icons {
   display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  border-top: 1px solid white;
-  border-bottom:1px solid white;
-  padding-top: 40px;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-flex: 1;
+-ms-flex: 1;
+flex: 1;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+-ms-flex-pack: distribute;
+justify-content: space-around;
+border-right: 0px;
+border-left: 0px;
+border-top: 1px solid white;
+border-bottom:1px solid white;
+padding-top: 40px;
 }
 .icon1,
 .icon2,
@@ -691,8 +692,10 @@ select {
 /*слайдер*/
 
 .partners--slider {
-  border-bottom: 1px solid #c5c5c5;
-  border-top: 1px solid #c5c5c5;
+   border-right: 0px;
+   border-left: 0px;
+   border-bottom: 1px solid #c5c5c5;
+   border-top: 1px solid #c5c5c5;
 }
 
 .slick-list {
@@ -723,16 +726,15 @@ select {
   background: #c1c7cf;
   margin-top: 105px;
 }
-
 .callback--text {
-  width: 100%;
-  margin-top: 60px;
-  margin-bottom: 40px;
-  border-bottom: 2px solid #e84e0e;
-  -o-border-image: -o-linear-gradient(left, #e84e0e, #fdcd2c);
-     border-image: -webkit-gradient(linear, left top, right top, from(#e84e0e), to(#fdcd2c));
-     border-image: linear-gradient(to right, #e84e0e, #fdcd2c);
-  border-image-slice: 1;
+   width: 100%;
+   margin-top: 60px;
+   margin-bottom: 40px;
+   border-top: 0px;
+   border-right: 0px;
+   border-left: 0px;
+   border-bottom: 2px solid #e84e0e;
+   border-image: linear-gradient(to right, #e84e0e, #fdcd2c);
 }
 
 .callback--text h2 {
@@ -759,6 +761,9 @@ select {
 input {
   width: 100%;
   border: none;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
   border-bottom: 1px solid gray;
   background: #c1c7cf;
   outline: none;
@@ -1267,14 +1272,15 @@ img{
       text-align: left;
       width: 100%;
   }
-  .about--text .international--transportation--text.top {
+.about--text .international--transportation--text.top {
+   border-top: 0px;
+   border-right: 0px;
+   border-left: 0px;
    border-bottom: 1px solid #e84e0e;
-   -o-border-image: -o-linear-gradient(left, #e84e0e, #fdcd2c);
-      border-image: -webkit-gradient(linear, left top, right top, from(#e84e0e), to(#fdcd2c));
-      border-image: linear-gradient(to right, #e84e0e, #fdcd2c);
+   border-image: linear-gradient(to right, #e84e0e, #fdcd2c);
    border-image-slice: 1;
    -webkit-animation: fromOpacity 3s;
-           animation: fromOpacity 3s;
+   animation: fromOpacity 3s;
 }
 .about--text .international--transportation--text {
    font-size: 15px;
@@ -1315,15 +1321,16 @@ img{
    .about--text .international--transportation--text.bottom p {
       text-align: left;
       width: 100%;
-  }
-  .about--text .international--transportation--text.top {
+}
+
+.about--text .international--transportation--text.top {
+   border-top: 0px;
+   border-right: 0px;
+   border-left: 0px;
    border-bottom: 1px solid #e84e0e;
-   -o-border-image: -o-linear-gradient(left, #e84e0e, #fdcd2c);
-      border-image: -webkit-gradient(linear, left top, right top, from(#e84e0e), to(#fdcd2c));
-      border-image: linear-gradient(to right, #e84e0e, #fdcd2c);
-   border-image-slice: 1;
+   border-image: linear-gradient(to right, #e84e0e, #fdcd2c);
    -webkit-animation: fromOpacity 3s;
-           animation: fromOpacity 3s;
+   animation: fromOpacity 3s;
 }
 .about--text .international--transportation--text {
    font-size: 15px;
