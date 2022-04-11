@@ -117,3 +117,6 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+/**Вот эта хуйня искуственная*/
+div.slick-slider { width: 1px; min-width: 100%; *width: 100%; }

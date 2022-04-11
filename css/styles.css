@@ -1195,17 +1195,17 @@ img{
 }
    .future--text {
       padding-top: 70px;
-    width: 53%;
+    width: 80%;
     font-size: 49px;
     line-height: 51px;
 }  
 
 .about--text {
-   padding-top: 420px;
+   padding-top: 35vh;
 }
 .transport--types {
    background-color: #393939;
-   padding-top: 350px;
+   padding-top: 3.5rem;
 }
   }
 
@@ -1244,13 +1244,13 @@ img{
 }
    .future--text {
       padding-top: 70px;
-    width: 53%;
+    width: 80%;
     font-size: 50px;
     line-height: 51px;
 }  
 
 .about--text {
-   padding-top: 400px;
+   padding-top: 30vh;
 }
 .transport--types {
    background-color: #393939;
@@ -1279,7 +1279,7 @@ img {
 @media(max-width: 464px){
    .future--text {
       padding-top: 70px;
-    width: 70%;
+    width: 80%;
     font-size: 50px;
     line-height: 51px;
 }
@@ -1337,9 +1337,9 @@ img {
 }
 }
 
-@media(max-width: 380px){
+@media(max-width: 375px){
 .about--text {
-    padding-top: 320px;
+    padding-top: 40vh;
 }
 .future--text {
    padding-top: 70px;
@@ -1350,4 +1350,4 @@ img {
 .about--text .international--transportation--text {
    font-size: 12px;
 }
-}
+}  
