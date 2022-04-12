@@ -308,34 +308,16 @@ select {
   font-size: 36px;
   color: #515151;
 }
-.advantages--content{
-   width: 100%;
-}
-
-.after--text {
-   width: 100%;
-   font-size: 40px;
-   text-align: left;
-   font-family: "HelveticaNormal", "Arial";
- }
-
- .adv-cont{
-    width: 50%;
-   background-color: #d6dadf;
- }
-
- .adv-cont .text {
-     width: 100%;
-     display: flex;
-     align-items: center;
-     padding: 0;
-     margin: 0;
-     color: #515151;
-   }
 
 /*цифра 1*/
 .first {
+  width: 50%;
   margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #d6dadf;
 }
 
 .advantages_hidden {
@@ -351,20 +333,35 @@ select {
   animation-duration: 1s;
 }
 
+.first--text {
+   height: 166px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  color: #515151;
+}
+
 .number {
   color: #515151;
   font-size: 241px;
   font-family: "HelveticaBold", "Arial";
-  line-height: 0.7;
+  line-height: 0;
   padding: 0;
 }
 
 .one {
-margin-left: -5.938rem;
+  margin-left: -6rem;
+}
+
+.after--text {
+  font-size: 40px;
+  font-family: "HelveticaNormal", "Arial";
 }
 
 /*цифра 2*/
 .second {
+  width: 50%;
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
@@ -373,6 +370,7 @@ margin-left: -5.938rem;
   background-color: #d6dadf;
 }
 .second--text {
+   height: 166px;
   display: flex;
   align-items: center;
   padding: 0;
@@ -400,6 +398,7 @@ margin-left: -5.938rem;
 }
 
 .thrid--text {
+   height: 166px;
   display: flex;
   align-items: center;
   padding: 0;
@@ -427,6 +426,7 @@ margin-left: -5.938rem;
   background-color: #d6dadf;
 }
 .forth--text {
+   height: 166px;
   display: flex;
   align-items: center;
   padding: 0;
@@ -454,6 +454,7 @@ margin-left: -5.938rem;
 }
 
 .fifth--text {
+   height: 166px;
   display: flex;
   align-items: center;
   padding: 0;
@@ -635,6 +636,7 @@ margin-left: -5.938rem;
 }
 
 .slick-track {
+
   display: flex;
 }
 
@@ -839,6 +841,9 @@ footer {
 
   .advantages--text h2 {
     font-size: 26px;
+  }
+  .first--text, .second--text, .thrid--text, .forth--text, .fifth--text{
+     height: 153px;
   }
   .icon--cont {
     width: 130px;
@@ -1070,6 +1075,7 @@ footer {
 }
  .number{
     /* !!!!! */
+    margin-bottom: -.625rem;
     font-size: 100px;
  }
  .one{
@@ -1077,6 +1083,9 @@ footer {
  }
  .three, .five {
    margin-left: -3.3rem;
+}
+.first--text, .second--text, .thrid--text, .forth--text, .fifth--text{
+   height: 78px;
 }
  .after--text{
     font-size: 16px;
@@ -1276,21 +1285,11 @@ img{
    height: 449px;
 }
 .after--text {
- font-size: 10px;
+ font-size: 12px;
 }
 .second .after--text, .thrid--text .after--text,.forth .after--text, 
 .fifth--text .after--text{
    padding-left: 10px;
-}
-.number{
-   line-height: 3.4rem;
-   font-size: 75px;
-}
-.one{
-   margin-left: -1.875rem;
-}
-.two{
-   padding-left: 2px;
 }
 img {
  margin-top: 30%;
