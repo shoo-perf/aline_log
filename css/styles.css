@@ -308,16 +308,34 @@ select {
   font-size: 36px;
   color: #515151;
 }
+.advantages--content{
+   width: 100%;
+}
+
+.after--text {
+   width: 100%;
+   font-size: 40px;
+   text-align: left;
+   font-family: "HelveticaNormal", "Arial";
+ }
+
+ .adv-cont{
+    width: 50%;
+   background-color: #d6dadf;
+ }
+
+ .adv-cont .text {
+     width: 100%;
+     display: flex;
+     align-items: center;
+     padding: 0;
+     margin: 0;
+     color: #515151;
+   }
 
 /*цифра 1*/
 .first {
-  width: 50%;
   margin-left: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  background-color: #d6dadf;
 }
 
 .advantages_hidden {
@@ -333,14 +351,6 @@ select {
   animation-duration: 1s;
 }
 
-.first--text {
-  display: flex;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  color: #515151;
-}
-
 .number {
   color: #515151;
   font-size: 241px;
@@ -350,17 +360,11 @@ select {
 }
 
 .one {
-  margin-left: -6rem;
-}
-
-.after--text {
-  font-size: 40px;
-  font-family: "HelveticaNormal", "Arial";
+margin-left: -5.938rem;
 }
 
 /*цифра 2*/
 .second {
-  width: 50%;
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
@@ -631,7 +635,6 @@ select {
 }
 
 .slick-track {
-  padding-top: 55px;
   display: flex;
 }
 
@@ -644,6 +647,18 @@ select {
   width: 100%;
   background: #c1c7cf;
   margin-top: 105px;
+}
+
+.logo-cont{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+}
+
+.logo-cont img{
+   margin: 0;
+   display: block;
 }
 
 .callback--text {
@@ -1055,7 +1070,6 @@ footer {
 }
  .number{
     /* !!!!! */
-    margin-bottom: -.625rem;
     font-size: 100px;
  }
  .one{
@@ -1262,11 +1276,21 @@ img{
    height: 449px;
 }
 .after--text {
- font-size: 12px;
+ font-size: 10px;
 }
 .second .after--text, .thrid--text .after--text,.forth .after--text, 
 .fifth--text .after--text{
    padding-left: 10px;
+}
+.number{
+   line-height: .65;
+   font-size: 75px;
+}
+.one{
+   margin-left: -1.875rem;
+}
+.two{
+   padding-left: 2px;
 }
 img {
  margin-top: 30%;
