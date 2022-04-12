@@ -1075,6 +1075,7 @@ footer {
 }
  .number{
     /* !!!!! */
+    margin-bottom: -1.25rem;
     font-size: 100px;
  }
  .one{
