@@ -11,6 +11,9 @@
    margin: 0;
    min-width: 100%;
 }
+.mobile--img{
+   display: none;
+}
 
 .navigation{
    position: absolute;
@@ -81,6 +84,7 @@ h1 {
 .faq-text ul{
    width: 60%;
    padding-top: 15px;
+   padding-bottom: 15px;
 }
 
 .faq-text ul li{
@@ -205,14 +209,26 @@ footer{
 
 @media(max-width:650px){
    .main--services--text {
-      top: 30%;
+      top: 43%;
   }
 }
 
 @media(max-width:575px){
+   .navbar-light .navbar-nav .nav-link {
+      font-size: 26px;
+  }
 .main--services--text h1 {
     font-size: 65px;
 }
+}
+
+@media(max-width:562px){
+   .big--img{
+      display: none;
+   }
+   .mobile--img{
+      display: block;
+   }
 }
 
 @media(max-width:479px){
@@ -220,7 +236,7 @@ footer{
       font-size: 60px;
   }
   .main--services--text {
-   top: 21%;
+   top: 41%;
 }
 .pre--list--text {
    font-size: 13px;

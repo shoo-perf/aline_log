@@ -792,6 +792,9 @@ footer {
 
 /* Медиазапросы */
 @media (max-width: 1827px) {
+      .navbar-light .navbar-nav .nav-link {
+         font-size: 16px;
+     }
    .about--text {
       padding-bottom: 220px;
       padding-top: 200px;
@@ -946,6 +949,7 @@ footer {
 }
 
 @media (max-width: 1147px) {
+   
    .navigation .logo {
       margin-left: 90px;
   }
@@ -979,6 +983,9 @@ footer {
 }
 
 @media (max-width: 991px) {
+   .navbar-brand img {
+      padding: 0;
+   }
   .navbar-dark .navbar-brand {
    margin: 0;
    width: 25%;
@@ -1077,7 +1084,6 @@ footer {
    height: 470px;
 }
  .number{
-    /* !!!!! */
     margin-bottom: -1.25rem;
     font-size: 100px;
  }
@@ -1126,8 +1132,8 @@ footer {
 @media(max-width: 575px){
    .navbar-collapse {
       left: 0;
-      height: 36vh;
-      background-color: rgba(0, 0, 0, .7);
+      height: 40vh;
+      background-color: rgba(0, 0, 0, 0.9);
       width: 100%;
   }
    .about--text {
@@ -1178,11 +1184,11 @@ img{
 }
 }
 @media(max-width: 562px){
+.navbar-light .navbar-nav .nav-link {
+    font-size: 26px;
+}
    .navbar-dark .navbar-brand {
       width: 30%;
-  }
-   .navbar-brand img {
-      padding-right: 20px;
   }
    .navigation{
       position: absolute;
