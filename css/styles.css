@@ -130,6 +130,7 @@ select {
    padding: 10px 45px 10px 45px;
    color: white;
    font-family: "HelveticaLight", "Arial";
+   font-size: 12px;
 }
 
 .navbar-toggler:focus,
@@ -150,8 +151,9 @@ select {
 }
 
 .nav-item a:hover {
-  border: 1px solid #ffb400;
-  border-radius: 500em;
+  border: 1px solid #fdcd2c;
+  border-radius: 400rem;
+  border-image-slice: 1;
   color: white;
 }
 
@@ -167,6 +169,7 @@ select {
 }
 
 .navbar-brand img{
+   max-width: 70%;
    margin: 0;
 }
 .nav--bar {
