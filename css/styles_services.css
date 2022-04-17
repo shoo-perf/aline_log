@@ -26,6 +26,7 @@
    width: 100%;
    position: absolute;
    top: 55%;
+   animation: showLeft 2s;
 }
 
 .main--services--text h1{
@@ -45,6 +46,7 @@
 }
 
 h1 {
+   user-select: none;
 	margin: 50px 0 30px;
 	text-align: center;
 }
@@ -60,7 +62,20 @@ h1 {
 	position: relative;
 	overflow: hidden;
 	margin: 20px 0;
-	transition: 0.3s ease;
+	transition: 0.7s ease;
+}
+
+.faq h3{
+   user-select: none;
+}
+
+.hidden_faq-title{
+   visibility: hidden;
+}
+
+.animate_faq-title{
+   animation: fadeInUp;
+   animation-duration: 2s;
 }
 
 .faq-title {

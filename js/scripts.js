@@ -25,15 +25,15 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  var element = $(".text_anim");
+  var text_element = $(".text_anim");
   $counter = 0;
   $(window).scroll(function () {
     var scroll = $(window).scrollTop() + $(window).height();
-    var offset = element.offset().top;
+    var offset = text_element.offset().top;
 
     if (scroll > offset && $counter == 0) {
-      element.removeClass("hidden");
-      element.addClass("animate_text");
+      text_element.removeClass("hidden");
+      text_element.addClass("animate_text");
     }
   });
 });
@@ -81,34 +81,4 @@ $(document).ready(function () {
 });
 
 
-/**Servises list*/
 
-const toggles = document.querySelectorAll('.faq-toggle');
-
-toggles.forEach(toggle => {
-	toggle.addEventListener('click', () => {
-		toggle.parentNode.classList.toggle('active');
-	});
-});
-
-/**Отправка формы*/
-$(document).ready(function() {
-
-	//E-mail Ajax Send
-	$("form").submit(function() { //Change
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "mail.php", //Change
-			data: th.serialize()
-		}).done(function() {
-			alert("Thank you!");
-			setTimeout(function() {
-				// Done Functions
-				th.trigger("reset");
-			}, 1000);
-		});
-		return false;
-	});
-
-});
