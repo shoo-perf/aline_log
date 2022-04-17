@@ -3,24 +3,24 @@ $(document).ready(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    Infinity:true,
+    Infinity: true,
     autoplaySpeed: 400,
     responsive: [
       {
         breakpoint: 992,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1
-        }
+          slidesToScroll: 1,
+        },
       },
       {
-         breakpoint: 565,
-         settings: {
-           slidesToShow: 2,
-           slidesToScroll: 1
-         }
-       }
-    ]
+        breakpoint: 565,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
 });
 
@@ -79,6 +79,3 @@ $(document).ready(function () {
     }
   });
 });
-
-
-

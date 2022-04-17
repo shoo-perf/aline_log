@@ -1,0 +1,145 @@
+.main--content {
+   position: relative;
+   width: 100%;
+}
+
+.main--img {
+   position: relative;
+}
+
+.main--img img {
+   margin: 0;
+   min-width: 100%;
+}
+
+.mobile--img {
+   display: none;
+}
+
+.navigation {
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 20;
+}
+
+.main--services--text {
+   width: 100%;
+   position: absolute;
+   top: 55%;
+   animation: showLeft 2s;
+}
+
+.main--services--text h1 {
+   user-select: none;
+   text-align-last: left;
+   font-family: "HelveticaBold", "Arial";
+   font-size: 110px;
+   color: white;
+}
+
+/**About us content*/
+
+.about--us--text {
+   padding-top: 50px;
+   font-family: "HelveticaBold", "Arial";
+   font-size: 20px;
+   color: #515151;
+}
+
+footer {
+   margin-top: 100px;
+}
+
+/**Медиазапросы*/
+@media(max-width:1827px) {
+   .navbar-light .navbar-nav .nav-link {
+      font-size: 16px;
+   }
+
+   .main--services--text {
+      top: 62%;
+   }
+}
+
+@media(max-width:1400px) {
+   .navbar-light .navbar-nav .nav-link {
+      font-size: 15px;
+   }
+}
+
+@media(max-width:1199px) {
+   .main--services--text {
+      top: 50%;
+   }
+}
+
+@media(max-width:1147px) {
+   .navbar-light .navbar-nav .nav-link {
+      font-size: 13px;
+   }
+}
+
+@media(max-width:991px) {
+   .navbar-brand img {
+      padding: 0;
+   }
+
+   .main--services--text {
+      top: 45%;
+   }
+}
+
+@media(max-width:767px) {
+   .main--services--text h1 {
+      font-size: 80px;
+   }
+
+   .main--services--text {
+      top: 40%;
+   }
+
+}
+
+@media(max-width:650px) {
+   .main--services--text {
+      top: 43%;
+   }
+}
+
+@media(max-width:575px) {
+   .navbar-light .navbar-nav .nav-link {
+      font-size: 26px;
+   }
+
+   .main--services--text h1 {
+      font-size: 65px;
+   }
+}
+
+@media(max-width:562px) {
+   .big--img {
+      display: none;
+   }
+
+   .mobile--img {
+      display: block;
+   }
+}
+
+@media(max-width:479px) {
+   .main--services--text h1 {
+      font-size: 60px;
+   }
+
+   .main--services--text {
+      top: 41%;
+   }
+
+}
+
+@media(max-width:375px) {
+   .main--services--text h1 {
+      font-size: 45px;
+   }
+}
