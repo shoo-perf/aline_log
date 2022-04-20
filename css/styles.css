@@ -168,29 +168,17 @@ select {
    background-size: cover;
 }
 
+.navbar-brand{
+   width: 20%;
+}
+
 .navbar-brand img {
-   max-width: 70%;
+   max-width: 100%;
    margin: 0;
 }
 
 .nav--bar {
    padding-top: 20px;
-}
-
-.small_screen_logo{
-   position: absolute;
-   width: 100%;
-   left: 0;
-   top: 0;
-   visibility: hidden;
-}
-
-.small_screen_logo img{
-   margin: 0;
-   padding: 0;
-   margin: 0 auto;
-   margin-top: 20vh;
-   width: 60%;
 }
 
 .about--text {
@@ -206,7 +194,7 @@ select {
 .about--text .international--transportation--text {
    width: 100%;
    color: white;
-   font-size: 30px;
+   font-size: 27px;
    text-transform: uppercase;
    font-family: "HelveticaNormal", "Arial";
    padding-bottom: 20px;
@@ -547,6 +535,10 @@ select {
    width: 20.2rem;
 }
 
+.icon3 img{
+   padding-top: 35px;
+}
+
 .icon--cont {
    width: 135px;
    height: 135px;
@@ -847,12 +839,12 @@ footer {
 
 @media (max-width: 1580px) {
    .about--text {
-      padding-bottom: 180px;
-      padding-top: 150px;
+      padding-bottom: 158px;
+      padding-top: 159px;
    }
 
    .about--text .international--transportation--text {
-      font-size: 25px;
+      font-size: 24px;
    }
 
    .future--text {
@@ -862,8 +854,8 @@ footer {
 
 @media (max-width: 1400px) {
    .about--text {
-      padding-bottom: 165px;
-      padding-top: 175px;
+      padding-bottom: 162px;
+      padding-top: 160px;
    }
 
    .about--text .international--transportation--text {
@@ -1035,8 +1027,8 @@ footer {
    }
 
    .about--text {
-      padding-bottom: 131px;
-      padding-top: 125px;
+      padding-bottom: 123px;
+      padding-top: 124px;
    }
 
    .about--text .international--transportation--text {
@@ -1071,8 +1063,8 @@ footer {
 
 @media (max-width: 1035px) {
    .about--text {
-      padding-bottom: 105px;
-      padding-top: 125px;
+      padding-bottom: 111px;
+      padding-top: 111px;
   }
 }
 
@@ -1106,7 +1098,7 @@ footer {
 
    .about--text {
       padding-bottom: 100px;
-      padding-top: 110px;
+      padding-top: 100px;
    }
 
    .international--transportation--text.top {
@@ -1159,8 +1151,8 @@ footer {
 
 @media(max-width: 896px) {
    .about--text {
-      padding-bottom: 67px;
-      padding-top: 71px;
+      padding-bottom: 63px;
+      padding-top: 65px;
   }
 }
 
@@ -1353,7 +1345,7 @@ footer {
    }
 
    .navbar-dark .navbar-brand {
-      width: 30%;
+      width: 50%;
    }
 
    .navigation {
@@ -1419,12 +1411,7 @@ footer {
 }
 
 @media(max-width: 479px) {
-   .small_screen_logo{
-      visibility: visible;
-   }
-   .navbar-brand{
-      visibility: hidden;
-   }
+
    .image--video {
       width: 100%;
       display: block;
@@ -1583,6 +1570,9 @@ footer {
 }
 
 @media(max-width: 375px) {
+   .navbar-dark .navbar-brand {
+      width: 52%;
+  }
    .about--text {
       padding-top: 40vh;
    }
