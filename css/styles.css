@@ -168,7 +168,7 @@ select {
    background-size: cover;
 }
 
-.navbar-brand{
+.navbar-brand {
    width: 20%;
 }
 
@@ -535,7 +535,7 @@ select {
    width: 20.2rem;
 }
 
-.icon3 img{
+.icon3 img {
    padding-top: 35px;
 }
 
@@ -810,16 +810,18 @@ footer {
    background-color: #515151;
 }
 
-.footer--content{
+.footer--content {
    display: flex;
    flex-direction: column;
    width: 50%;
    margin: 0 auto;
 }
-.footer--content p, .footer--content a{
+
+.footer--content p,
+.footer--content a {
    font-size: 15px;
    font-family: "HelveticaLight", Arial;
-   color: white;
+   color: #8a8a8a;
 }
 
 .footer-copyright p {
@@ -827,7 +829,7 @@ footer {
    padding: 20px 0 10px 0;
 }
 
-.footer--info{
+.footer--info {
    display: flex;
    justify-content: space-around;
    padding: 0 0 20px 0;
@@ -1080,7 +1082,7 @@ footer {
    .about--text {
       padding-bottom: 111px;
       padding-top: 111px;
-  }
+   }
 }
 
 @media (max-width: 991px) {
@@ -1168,10 +1170,11 @@ footer {
    .about--text {
       padding-bottom: 63px;
       padding-top: 65px;
-  }
-  .footer--content{
-   width: 80%;
-}
+   }
+
+   .footer--content {
+      width: 80%;
+   }
 }
 
 @media(max-width: 767px) {
@@ -1356,10 +1359,13 @@ footer {
    .e-mail a {
       font-size: 15px;
    }
-   .footer--content{
+
+   .footer--content {
       width: 80%;
    }
-   .footer--content p, .footer--content a{
+
+   .footer--content p,
+   .footer--content a {
       font-size: 13px;
    }
 }
@@ -1515,10 +1521,13 @@ footer {
       display: flex;
       justify-content: space-around;
    }
-   .footer--content{
+
+   .footer--content {
       width: 90%;
    }
-   .footer--content p, .footer--content a{
+
+   .footer--content p,
+   .footer--content a {
       font-size: 13px;
    }
 }
@@ -1603,7 +1612,8 @@ footer {
 @media(max-width: 375px) {
    .navbar-dark .navbar-brand {
       width: 52%;
-  }
+   }
+
    .about--text {
       padding-top: 40vh;
    }
@@ -1618,10 +1628,13 @@ footer {
    .about--text .international--transportation--text {
       font-size: 12px;
    }
-   .footer--content{
+
+   .footer--content {
       width: 90%;
    }
-   .footer--content p, .footer--content a{
-      font-size: 11px;
+
+   .footer--content p,
+   .footer--content a {
+      font-size: 10px;
    }
 }

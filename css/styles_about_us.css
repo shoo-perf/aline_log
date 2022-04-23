@@ -40,10 +40,11 @@
 }
 
 /**About us content*/
-.header--text{
+.header--text {
    padding-top: 50px;
 }
-.header--text h3{
+
+.header--text h3 {
    text-align: left;
    color: #e84e0e;
    font-size: 30px;
@@ -56,55 +57,58 @@
    font-size: 20px;
    color: #393939;
 }
-.about--team{
+
+.about--team {
    width: 100%;
    background-color: #393939;
    margin-top: 50px;
 }
-.about--team--content{
+
+.about--team--content {
    display: flex;
 }
 
-.about--team--text{
+.about--team--text {
    padding-top: 60px;
    color: white;
 }
 
-.team--header{
+.team--header {
    width: 100%;
    border-bottom: 1px solid white;
 }
 
-.about--team--text h3{
+.about--team--text h3 {
    font-family: "HelveticaBold", "Arial";
    font-size: 36px;
    padding-bottom: 40px;
 }
 
-.about--team--text p{
+.about--team--text p {
    font-size: 21px;
    padding-top: 40px;
    font-family: "HelveticaNormal", "Arial";
 }
 
-.about-team-pic img{
+.about-team-pic img {
    margin: 0;
    margin-left: auto;
    width: 90%;
 }
 
-.marketing--content{
+.marketing--content {
    padding-top: 50px;
 
 }
-.market--heder h3{
+
+.market--heder h3 {
    text-align: center;
    color: #e84e0e;
    font-size: 30px;
    font-family: "HelveticaBold", "Arial";
 }
 
-.market--text p{
+.market--text p {
    padding-top: 40px;
    font-family: "HelveticaBold", "Arial";
    font-size: 20px;
@@ -184,9 +188,10 @@ footer {
 }
 
 @media(max-width:562px) {
-   .main--img{
+   .main--img {
       height: 100vh;
    }
+
    .big--img {
       display: none;
    }
@@ -195,17 +200,20 @@ footer {
       height: 100vh;
       display: block;
    }
+
    .about--team--content {
       flex-direction: column;
-  }
-  .about-team-pic img {
-     padding-top: 40px;
-   width: 100%;
-}
-.market--text p {
+   }
 
-   text-align: left;
-}
+   .about-team-pic img {
+      padding-top: 40px;
+      width: 100%;
+   }
+
+   .market--text p {
+
+      text-align: left;
+   }
 }
 
 @media(max-width:479px) {
