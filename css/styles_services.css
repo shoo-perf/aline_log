@@ -232,7 +232,7 @@ footer {
 
 @media(max-width:650px) {
    .main--services--text {
-      top: 43%;
+      top: 71%;
    }
 }
 
@@ -252,7 +252,6 @@ footer {
    }
 
    .mobile--img {
-      height: 100vh;
       display: block;
    }
 }
@@ -263,7 +262,7 @@ footer {
    }
 
    .main--services--text {
-      top: 56%;
+      top: 41%;
    }
 
    .pre--list--text {
