@@ -24,8 +24,9 @@
 }
 
 .main--services--text {
-   width: 100%;
+   width: 50%;
    position: absolute;
+   left: 2%;
    top: 55%;
    animation: showLeft 2s;
 }
@@ -251,6 +252,7 @@ footer {
    }
 
    .mobile--img {
+      height: 100vh;
       display: block;
    }
 }
@@ -261,7 +263,7 @@ footer {
    }
 
    .main--services--text {
-      top: 41%;
+      top: 56%;
    }
 
    .pre--list--text {

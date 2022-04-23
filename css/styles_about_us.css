@@ -10,6 +10,7 @@
 .main--img img {
    margin: 0;
    min-width: 100%;
+
 }
 
 .mobile--img {
@@ -39,14 +40,79 @@
 }
 
 /**About us content*/
+.header--text{
+   padding-top: 50px;
+}
+.header--text h3{
+   text-align: left;
+   color: #e84e0e;
+   font-size: 30px;
+   font-family: "HelveticaBold", "Arial";
+}
 
 .about--us--text {
    padding-top: 50px;
    font-family: "HelveticaBold", "Arial";
    font-size: 20px;
-   color: #515151;
+   color: #393939;
+}
+.about--team{
+   width: 100%;
+   background-color: #393939;
+   margin-top: 50px;
+}
+.about--team--content{
+   display: flex;
 }
 
+.about--team--text{
+   padding-top: 60px;
+   color: white;
+}
+
+.team--header{
+   width: 100%;
+   border-bottom: 1px solid white;
+}
+
+.about--team--text h3{
+   font-family: "HelveticaBold", "Arial";
+   font-size: 36px;
+   padding-bottom: 40px;
+}
+
+.about--team--text p{
+   font-size: 21px;
+   padding-top: 40px;
+   font-family: "HelveticaNormal", "Arial";
+}
+
+.about-team-pic img{
+   margin: 0;
+   margin-left: auto;
+   width: 90%;
+}
+
+.marketing--content{
+   padding-top: 50px;
+
+}
+.market--heder h3{
+   text-align: center;
+   color: #e84e0e;
+   font-size: 30px;
+   font-family: "HelveticaBold", "Arial";
+}
+
+.market--text p{
+   padding-top: 40px;
+   font-family: "HelveticaBold", "Arial";
+   font-size: 20px;
+   text-align: center;
+   color: #393939;
+}
+
+/**Footer*/
 footer {
    margin-top: 100px;
 }
@@ -103,7 +169,7 @@ footer {
 
 @media(max-width:650px) {
    .main--services--text {
-      top: 43%;
+      top: 71%;
    }
 }
 
@@ -118,13 +184,28 @@ footer {
 }
 
 @media(max-width:562px) {
+   .main--img{
+      height: 100vh;
+   }
    .big--img {
       display: none;
    }
 
    .mobile--img {
+      height: 100vh;
       display: block;
    }
+   .about--team--content {
+      flex-direction: column;
+  }
+  .about-team-pic img {
+     padding-top: 40px;
+   width: 100%;
+}
+.market--text p {
+
+   text-align: left;
+}
 }
 
 @media(max-width:479px) {
